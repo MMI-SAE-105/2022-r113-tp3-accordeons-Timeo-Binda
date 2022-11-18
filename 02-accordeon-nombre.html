@@ -8,5 +8,21 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div class="accordeon">
+      <section x-data="{
+        isOpen = 1,
+      }">
+        <button>bouton 1</button>
+        <p x-show="isOpen" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde cumque aliquid nihil, voluptatibus alias adipisci nemo quos quae incidunt omnis explicabo ipsum. Eaque quis dolor laborum aspernatur quibusdam repellat.</p>
+      </section>
+      <section>
+        <button>bouton 2</button>
+        <p>Aspernatur, neque velit quo optio aliquid aut sed itaque veritatis quibusdam temporibus eaque iure dolore sit voluptatum enim adipisci, fuga repudiandae magni quae nesciunt quia esse quisquam accusantium laboriosam! Cupiditate.</p>
+      </section>
+      <section>
+        <button>bouton 3</button>
+        <p>Aspernatur eveniet nesciunt, optio ad ullam nisi alias voluptatum quae molestias ea magnam, sint exercitationem, cupiditate perferendis consectetur commodi veritatis veniam explicabo dolores aliquam laudantium blanditiis impedit. Eveniet, repudiandae voluptatibus.</p>
+      </section>
+    </div>
   </body>
 </html>
