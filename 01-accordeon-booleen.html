@@ -10,19 +10,20 @@
   <body>
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
-      <section x-data="{
-        isOpen:true,
-      }">
-        <button>bouton 1</button>
-        <p x-show="isOpen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo soluta quis explicabo velit culpa dolor, dolorum exercitationem numquam maiores quam, eos officia reiciendis provident temporibus corrupti dolore nostrum mollitia!</p>
+
+      <section x-data="{isOpen:false}">
+        <button @click="isOpen = true">bouton 1</button>
+        <p x-show="isOpen = true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo soluta quis explicabo velit culpa dolor, dolorum exercitationem numquam maiores quam, eos officia reiciendis provident temporibus corrupti dolore nostrum mollitia!</p>
       </section>
+
       <section>
-        <button>bouton 2</button>
-        <p>Officiis veniam sunt odio fugit quo dolore magnam voluptatem soluta qui maxime veritatis maiores quibusdam magni tenetur blanditiis aliquam, tempora eos esse optio ipsam velit. Adipisci iusto porro odio soluta.</p>
+        <button @click="isOpen = true">bouton 2</button>
+        <p x-show="isOpen = true">Officiis veniam sunt odio fugit quo dolore magnam voluptatem soluta qui maxime veritatis maiores quibusdam magni tenetur blanditiis aliquam, tempora eos esse optio ipsam velit. Adipisci iusto porro odio soluta.</p>
       </section>
+      
       <section>
-        <button>bouton 3</button>
-        <p>Praesentium consectetur laudantium, iure aliquam voluptatem natus inventore quo beatae aperiam deserunt laborum quibusdam molestiae soluta, quaerat sunt voluptatum cumque? Debitis omnis blanditiis itaque cupiditate nesciunt harum, deserunt laborum doloribus.</p>
+        <button @click="isOpen = true">bouton 3</button>
+        <p x-show="isOpen = true">Praesentium consectetur laudantium, iure aliquam voluptatem natus inventore quo beatae aperiam deserunt laborum quibusdam molestiae soluta, quaerat sunt voluptatum cumque? Debitis omnis blanditiis itaque cupiditate nesciunt harum, deserunt laborum doloribus.</p>
       </section>
     </div>
   </body>
