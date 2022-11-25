@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{isOpen:0}">
+<html lang="fr" x-data="{isOpen : 1}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,20 +8,21 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+
     <div class="accordeon" >
-      <section >
+      <section>
         <button @click="isOpen = 1">bouton 1</button>
-        <p x-show="isOpen === 1"x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde cumque aliquid nihil, voluptatibus alias adipisci nemo quos quae incidunt omnis explicabo ipsum. Eaque quis dolor laborum aspernatur quibusdam repellat.</p>
+        <p x-show="isOpen == 1"x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde cumque aliquid nihil, voluptatibus alias adipisci nemo quos quae incidunt omnis explicabo ipsum. Eaque quis dolor laborum aspernatur quibusdam repellat.</p>
       </section>
 
       <section>
         <button @click="isOpen = 2">bouton 2</button>
-        <p x-show="isOpen === 2"x-transition.scale.origin.top>Aspernatur, neque velit quo optio aliquid aut sed itaque veritatis quibusdam temporibus eaque iure dolore sit voluptatum enim adipisci, fuga repudiandae magni quae nesciunt quia esse quisquam accusantium laboriosam! Cupiditate.</p>
+        <p x-show="isOpen == 2"x-transition.scale.origin.top>Aspernatur, neque velit quo optio aliquid aut sed itaque veritatis quibusdam temporibus eaque iure dolore sit voluptatum enim adipisci, fuga repudiandae magni quae nesciunt quia esse quisquam accusantium laboriosam! Cupiditate.</p>
       </section>
 
       <section>
         <button @click="isOpen = 3">bouton 3</button>
-        <p x-show="isOpen === 2"x-transition.scale.origin.top>Aspernatur eveniet nesciunt, optio ad ullam nisi alias voluptatum quae molestias ea magnam, sint exercitationem, cupiditate perferendis consectetur commodi veritatis veniam explicabo dolores aliquam laudantium blanditiis impedit. Eveniet, repudiandae voluptatibus.</p>
+        <p x-show="isOpen == 2"x-transition.scale.origin.top>Aspernatur eveniet nesciunt, optio ad ullam nisi alias voluptatum quae molestias ea magnam, sint exercitationem, cupiditate perferendis consectetur commodi veritatis veniam explicabo dolores aliquam laudantium blanditiis impedit. Eveniet, repudiandae voluptatibus.</p>
       </section>
     </div>
   </body>
